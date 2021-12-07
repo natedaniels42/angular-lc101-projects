@@ -1,0 +1,11 @@
+.movies h3, li {
+    color: lightsalmon;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.movies li {
+    font-size: 20px;
+}

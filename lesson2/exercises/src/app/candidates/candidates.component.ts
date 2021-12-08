@@ -22,7 +22,7 @@ export class CandidatesComponent implements OnInit {
   constructor() { }
 
   addToCrew(person: object) {
-    if (!this.crew.some(candidate => candidate === person)) {
+    if (!this.crew.includes(person)) {
       this.crew.push(person);
     }
   }

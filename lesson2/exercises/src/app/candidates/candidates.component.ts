@@ -16,9 +16,25 @@ export class CandidatesComponent implements OnInit {
     {name: 'Champ', data: {age: 9, mass: '36 kg', sidekick: 'Carly'}, image: 'assets/images/Carly.png'}
   ];
 
+  editMissionName: boolean = false;
   crew = [];
 
   constructor() { }
+
+  addToCrew(person: object) {
+    if (!this.crew.some(candidate => candidate === person)) {
+      this.crew.push(person);
+    }
+  }
+
+  clearCrew() {
+    this.crew = [];
+  }
+
+  changeMissionName($event?: Event) {
+    this.missionName = ($event.target as HTMLInputElement).value;
+    this.editMissionName = false;
+  }
 
   ngOnInit() {
   }

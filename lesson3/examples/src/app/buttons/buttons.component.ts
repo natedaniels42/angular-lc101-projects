@@ -14,6 +14,12 @@ export class ButtonsComponent implements OnInit {
 
    constructor() { }
 
+   catch($event?: Event) {
+      const random = Math.floor(Math.random() * 200) - 100;
+
+      (event.target as HTMLElement).style.left = `${random}px`;
+   }
+
    ngOnInit() { }
 
 }

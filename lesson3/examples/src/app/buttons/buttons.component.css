@@ -27,3 +27,7 @@ button {
 .frustration {
    background-color: gold;
 }
+
+.catch {
+   position: relative;
+}

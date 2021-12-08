@@ -6,5 +6,5 @@
    <button (click)="goldInactive = !goldInactive; silverInactive = !silverInactive; copperInactive = !copperInactive">Activate/Deactivate Buttons</button>
    <p style="text-decoration: underline;">Joke Buttons</p>
    <button [class.frustration]="!frustrationInactive" [disabled]="frustrationInactive" (mouseover)="frustrationInactive = true" (mouseout)="frustrationInactive = false">Frustration Incarnate!</button><br>
-   <button (mouseover)="style">Catch me!</button>
+   <button class="catch" (mouseover)="catch($event)">Catch me!</button>
 </div>
